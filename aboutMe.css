@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+/* navbar  */
+
+.navbar1 {
+    background-color: rgba(0, 0, 0, 0.93);
+    position: sticky;
+    top: 0;
+}
+.nav-btn{
+    background-color: rgba(0, 0, 0, 0.558);
+}
+.btn1 {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.btn1:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 2px white,
+        0 0 2px white,
+        0 0 10px white;
+}
+
+.nav_text_1 {
+    text-shadow: 0 0 1px;
+    font-size: 25px;
+    color: wheat;
+    padding: 0px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav_text_2 {
+    color: rgba(255, 255, 255, 0.686);
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav_text_2:hover {
+    color: white;
+    text-shadow: 0 0 2px;
+}
+
+/* navbar ends  */
+
+
+/* home  */
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),url('./images/hello.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.content_div{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.name2,
+.name1 {
+    font-size: 50px;
+    padding-left: 30px;
+    background: linear-gradient(to right, white,black);
+    background-clip: text;
+    text-shadow: 0 0 1px white;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn_home {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.btn_home:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 2px white,
+        0 0 2px white,
+        0 0 10px white;
+}
+
+/* home  ends  */
+
+/* my journey   */
+
+.journey_heading{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-shadow: 0 0 2px;
+    padding-top: 60px;
+    cursor: pointer;
+    font-size: 36px;
+}
+.journey_heading_span{
+    color: orange;
+}
+.journey_subheading{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 1px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.journey_text{
+    color: orange;
+    cursor: pointer;
+    text-shadow: 0 0 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.journey_text_span{
+    color: white;
+}
+.journey_p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+}
+.journey_box{
+    transform: scale(.9);
+    transition: .8s;
+}
+.journey_box:hover{
+    transform: scale(1);
+    transition: .5s;
+}
+
+/* my journey ends   */
+
+/* skills  */
+
+li{
+    list-style: none;
+    margin: 5px 0;
+    padding: 5px;
+}
+.skill_text{
+    color: orange;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar span{
+    height: 5px;
+    float: left;
+    background: linear-gradient(135deg, white, orange 100%);
+}
+.python{
+    width: 85%;
+    animation: python 12s;
+}
+.django{
+    width: 70%;
+    animation: django 12s;
+}
+.javascript{
+    width: 80%;
+    animation: javascript 12s;
+}
+.react{
+    width: 70%;
+    animation: react 12s;
+}
+.html{
+    width: 90%;
+    animation: html 12s;
+}
+.sql{
+    width: 70%;
+    animation: sql 12s;
+}
+.framework{
+    width: 80%;
+    animation: framework 12s;
+}
+.git{
+    width: 90%;
+    animation: git 12s;
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes django{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes framework{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes git{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+/* footer  */
+
+.footer{
+    padding-top: 50px;
+}
+.footer_heading{
+    background: linear-gradient(to right, aqua, white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer_text{
+    color: #4666FF;
+    text-align: center;
+    font-size: 12px;
+}
+/* icons  */
+
+.icons {
+    padding-left: 12px;
+}
+
+.icon {
+    padding: 0px 4px 2px 5px;
+    border-radius: 50%;
+    color: white;
+    text-shadow: 0 0 1px;
+    cursor: pointer;
+    
+}
+
+.icon:hover {
+    border: 1px solid aqua;
+    padding: 0px 4px 2px 5px;
+    border-radius: 50%;
+    text-shadow: 0 0 1px;
+    color: aqua;
+    transform: rotateY(180deg);
+}
+.card{
+    display: none;
+    margin: 0;
+}
+.skill_text img{
+    margin: 0;
+    height: 20px;
+    width: 2px;
+}
+
+
+/* icons  ends*/
+
+/* footer ends  */
